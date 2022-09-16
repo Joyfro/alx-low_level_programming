@@ -1,37 +1,36 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
- *print_triangle - prints a triangle
- *@size:size parameter of triangle
- *Return: returns nothing
+ * print_triangle - Function that prints a triangle, followed by a new line.
+ * @size: the int for the paramaters of my function
+ * Return: Always 0.
  */
-
 void print_triangle(int size)
 {
-	int inc1, inc2;
+	int x, y = 0;
+	int space;
 
 	if (size > 0)
 	{
-		for (inc1 = 1; inc1 <= size; inc1++)
+		while (y < size)
 		{
-			for ((inc2 = size - inc1); inc2 > 0; inc2--)
+			space = size - y - 1;
+			while (x < size)
 			{
-				putchar(' ');
+				if (space > x)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar('#');
+				}
+				x++;
 			}
-
-			for (inc2 = 0; inc2 < inc1; inc2++)
-			{
-				putchar('#');
-			{
-
-			if (inc1 == size)
-			{
-				continue;
-			}
-
-			putchar('\n');
+			y++;
+			x = 0;
+			_putchar ('\n');
 		}
 	}
-	putchar('\n');
+	else
+		_putchar('\n');
 }
