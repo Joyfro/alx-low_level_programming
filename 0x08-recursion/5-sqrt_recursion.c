@@ -16,10 +16,10 @@ int sqrt_check(int s, int c)
 	return (sqrt_check(s + 1, c));
 }
 /**
- *  * _sqrt_recursion - function that returns the natural root of a number
- *   * @n: parameter
- *    * Return: natural root of n
- *     */
+ * _sqrt_recursion - function that returns the natural root of a number
+ * @n: parameter
+ * Return: natural root of n
+ */
 
 int _sqrt_recursion(int n)
 {
@@ -29,8 +29,3 @@ int _sqrt_recursion(int n)
 		return (n);
 	return (sqrt_check(1, n));
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-
