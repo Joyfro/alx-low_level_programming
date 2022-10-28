@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- *  * check_valid_string - checks if a string has only 0's and 1's
- *   * @b: string to be checked
- *    *
- *     * Return: 1 if string is valid, 0 otherwise
- *      */
+ * check_valid_string - checks if a string has only 0's and 1's
+ * @b: string to be checked
+ *
+ * Return: 1 if string is valid, 0 otherwise
+ */
 int check_valid_string(const char *b)
 {
 	if (b == NULL)
@@ -23,11 +23,11 @@ int check_valid_string(const char *b)
 
 
 /**
- *  * binary_to_uint - converts a binary to an unsigned int
- *   * @b: the binary number as a string
- *    *
- *     * Return: the converted value
- *      */
+ * binary_to_uint - converts a binary to an unsigned int
+ * @b: the binary number as a string
+ *
+ * Return: the converted value
+ */
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int decimal = 0;
